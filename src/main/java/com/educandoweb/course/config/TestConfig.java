@@ -57,6 +57,7 @@ public class TestConfig implements CommandLineRunner {
 		p4.getCategories().add(cat3);
 		p5.getCategories().add(cat2);
 
+
 		productRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
 
 		User u1 = new User(null, "Maria Brown", "maria@gmail.com", "988888888", "123456");
@@ -69,4 +70,4 @@ public class TestConfig implements CommandLineRunner {
 		userRepository.saveAll(Arrays.asList(u1, u2));
 		orderRepository.saveAll(Arrays.asList(o1, o2, o3));
 	}
-}
+}  
